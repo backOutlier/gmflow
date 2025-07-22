@@ -30,7 +30,7 @@ CUDA_VISIBLE_DEVICES=0 python main.py \
 # davis
 
 CUDA_VISIBLE_DEVICES=0 python main.py \
---inference_dir demo/davis_breakdance-flare \
+--inference_dir demo/cube2cube \
 --output_path output/gmflow-norefine-davis_breakdance-flare \
 --resume pretrained/gmflow_sintel-0c07dcb3.pth
 
@@ -40,7 +40,7 @@ CUDA_VISIBLE_DEVICES=0 python main.py \
 # inference GMFlow with refinement
 
 CUDA_VISIBLE_DEVICES=0 python main.py \
---inference_dir demo/davis_breakdance-flare \
+--inference_dir demo/cube2cube \
 --output_path output/gmflow-withrefine-davis_breakdance-flare \
 --resume pretrained/gmflow_with_refine_sintel-3ed1cf48.pth \
 --padding_factor 32 \
